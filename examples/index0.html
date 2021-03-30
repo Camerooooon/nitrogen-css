@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../nitrogen.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    </head>
+    <body>
+        <h1>Cool buttons yay</h1>
+        <p>Created by Cameron, I have no clue what I'm doing so just enjoy some fun buttons I made. These examples also use different types of font awesome icons. I don't own these icons nor do they come with the main.css file. I'll add every color veriation for each button at some point I think.</p>
+        <h2>Outline Buttons</h2>
+        <button style="margin: 10px;" class="btn" href="#">Nothing</button>
+        <button style="margin: 10px;" class="btn btn-blue" href="#">Blue</button>
+        <button style="margin: 10px;" class="btn btn-red" href="#">Red</button>
+        <button style="margin: 10px;" class="btn btn-green" href="#">Green</button>
+        <button style="margin: 10px;" class="btn btn-light-blue" href="#">Light Blue</button>
+        <button style="margin: 10px;" class="btn btn-light-red" href="#">Light Red</button>
+        <button style="margin: 10px;" class="btn btn-light-green" href="#">Light Green</button>
+        <button style="margin: 10px;" class="btn btn-internal-blue" href="#">Internal Blue</button>
+        <button style="margin: 10px;" class="btn btn-lift" href="#">Lift</button>
+        <h2>Solid Buttons</h2>
+        <button style="margin: 10px;" class="btn btn-solid btn-solid-blue btn-sm" href="#">Solid Small</button>
+        <button style="margin: 10px;" class="btn btn-solid btn-solid-blue" href="#">Solid Normal</button>
+        <button style="margin: 10px;" class="btn btn-solid btn-solid-blue btn-lg" href="#">Solid Large</button>
+        <button style="margin: 10px;" class="btn btn-solid btn-solid-disabled" href="#">Disabled</button>
+        <button style="margin: 10px;" class="btn btn-solid btn-solid-blue-loader" href="#">Loading</button>
+        <button style="margin: 10px;" class="btn btn-solid btn-solid-error" href="#">Error</button>
+        <h2>Inputs</h2>
+        <input style="margin: 10px;" type="text" class="field" placeholder="Username">
+        <input style="margin: 10px;" type="password" class="field" placeholder="Password">
+        <br>
+        <textarea style="margin: 10px;" class="field" placeholder="Big text input"></textarea>
+        <h2>Input Section</h2>
+        <div class="section" style="padding: 20px; text-align: center; width: max-content;">
+            <i class="fas fa-user"></i><input style="margin: 10px;" type="text" class="field" placeholder="Username">
+            <br>
+            <i class="fas fa-lock"></i><input style="margin: 10px;" type="password" class="field" placeholder="Password">    
+            <br>
+            <button class="btn btn-solid btn-solid-blue btn-sm" href="#" onclick="loader(this)">Log Me In</button>
+        </div>
+        <h2>Navbar Example</h2>
+        <div class="section bg-dark navbar" display="width: 100%;">
+            <ul>
+                <li><h3 style="margin: 10px;"><i class="fas fa-coffee"></i> Navbar Title</h3></li>
+                <li><button style="margin: 5px; padding-left: 40px; padding-right: 40px;" class="btn btn-solid-blue btn-sm" href="#">Home</button></li>
+                <li><button style="margin: 5px; padding-left: 40px; padding-right: 40px;" class="btn btn-solid-blue btn-sm" href="#">Info</button></li>
+                <li><button style="margin: 5px; padding-left: 40px; padding-right: 40px;" class="btn btn-solid-blue btn-sm" href="#">About Me</button></li>
+                <li><button style="margin: 5px; padding-left: 40px; padding-right: 40px;" class="btn btn-solid-blue btn-sm" href="#">Contact</button></li>
+                <li style="float: right;"><button style="margin: 5px; padding-left: 25px; padding-right: 25px;" class="btn btn-solid-blue btn-sm" href="#">Login</button></li>
+            </ul>
+        </div>
+        <h2>Colored Sections</h2>
+        <div class="section bg-blue bg" style="padding: 15px; margin: 5px;">
+            <h3>This is a colored section</h3>
+            <p>This is also part of the colored section</p>
+        </div>
+        <div class="section bg-green bg" style="padding: 15px; margin: 5px;">
+            <h3>This is a colored section</h3>
+            <p>This is also part of the colored section</p>
+        </div>
+        <div class="section bg-red bg" style="padding: 15px; margin: 5px;">
+            <h3>This is a colored section</h3>
+            <p>This is also part of the colored section</p>
+        </div>
+        <div class="section bg-yellow bg" style="padding: 15px; margin: 5px;">
+            <h3>This is a colored section</h3>
+            <p>This is also part of the colored section</p>
+        </div>
+        <h2>Colored Sections as Alerts</h2>
+        <div class="section bg-red bg" style="padding: 15px; margin: 5px; width: 500px;">
+            <div class="section-right">
+                <h3><i class="fas fa-times" onclick="dismiss(this)"></i></h3>
+            </div>
+            <h3><i class="fas fas fa-exclamation-triangle"></i> Uh oh!</h3>
+            <p>It seems like you were unable to perform that action.</p>
+        </div>
+        <div class="section bg-yellow bg" style="padding: 15px; margin: 5px; width: 500px;">
+            <div class="section-right">
+                <h3><i class="fas fa-times" onclick="dismiss(this)"></i></h3>
+            </div>
+            <h3><i class="fas fas fa-exclamation"></i> Something is not correct?</h3>
+            <p>It seems like didn't fill out all of the required fields</p>
+        </div>
+        <div class="section bg-blue bg" style="padding: 15px; margin: 5px; width: 500px;">
+            <div class="section-right">
+                <h3><i class="fas fa-times" onclick="dismiss(this)"></i></h3>
+            </div>
+            <h3><i class="fas fas fa-check"></i> Action completed!</h3>
+            <p>It seems like you were able to perform that action.</p>
+        </div>
+        <h2>Attached Sections</h2>
+        <div class="section bg-blue bg attach-bottom" style="padding: 5px; width: 20%; margin-left: 5px;">
+            <h4>This is a section title</h4>
+        </div>
+        <div class="section bg-dark attach-top" style="padding: 5px; width: 20%; margin-left: 5px;">
+            <p>You can create interesting looking boxes using the attach-top and attach-bottom classes. This will allow you to attach sections together.</p>
+        </div>
+        <div class="section bg-forest bg attach-bottom" style="padding: 5px; width: 50%; margin-left: 5px; margin-top: 5px;">
+            <h4>This is a section title</h4>
+        </div>
+        <div class="section bg-darkest bg attach-top" style="padding: 5px; width: 50%; margin-left: 5px;">
+            <p>You can create interesting looking boxes using the attach-top and attach-bottom classes. This will allow you to attach sections together.</p>
+	</div>
+        <script src="main.js"></script>
+    </body>
+</html>
